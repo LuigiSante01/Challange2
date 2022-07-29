@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challange2</title>
+    <link rel="stylesheet" type="text/css" href="style.css"
+</head>
+<body>
+    <div class="contenitore">
+        <div class="bilancio">
+            <div class="testo">
+                <p>My Balance</p>
+                <p>$921.48</p>
+            </div>
+            <div class="logo">
+                <img src="img/logo.svg" alt="logo">
+            </div>
+        
+        </div>
+        <div class="grafico">
+            <h2>Spending - Last 7 days</h2>
+            <div class="settimana">
+                <section>
+                    <canvas width="40" height="50" ></canvas>
+                    <p>mon</p>
+                </section>
+
+                <section>
+                    <canvas width="40" height="100" ></canvas>
+                    <p>tue</p>
+                </section>
+
+                <section>
+                    <p class="statistica">$52.36</p>
+                    <canvas class="cazz" width="40" height="150" ></canvas>
+                    <p>wed</p>
+                </section>
+
+                <section>
+                    <p class="statistica2">$31.07</p>
+                    <canvas  class="cazz2" width="40" height="80" ></canvas>
+                    <p>thu</p>
+                </section>
+                <section>
+                    <canvas width="40" height="60" ></canvas>
+                    <p>fri</p>
+                </section>
+                <section>
+                    <canvas width="40" height="120" ></canvas>
+                    <p>sat</p>
+                </section>
+                <section>
+                    <canvas width="40" height="50" ></canvas>
+                    <p>sun</p>
+                </section>
+                
+            </div>
+            <hr size="1">
+            <div class="fondo">
+               <div class="primo"> 
+                    <p class="no">Total this month</p>
+                    <p>$478.43</p>
+                </div>
+                <div class="secondo">
+                    <P>+2.4%</P>
+                    <p>from last month</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    
+document.querySelector(".cazz").addEventListener("mouseover",function(){
+        document.querySelector(".statistica").style.display = "block";
+    })
+    document.querySelector(".cazz").addEventListener("mouseout",function(){
+        document.querySelector(".statistica").style.display = "none";
+    })
+    document.querySelector(".cazz2").addEventListener("mouseover",function(){
+        document.querySelector(".statistica2").style.display = "block";
+        
+    })
+    document.querySelector(".cazz2").addEventListener("mouseout",function(){
+        document.querySelector(".statistica2").style.display = "none";
+    })
+
+</script>
+</html>

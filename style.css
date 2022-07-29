@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,400;1,700&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,800&family=Inspiration&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+}
+.contenitore{
+    background-color: hsl(27, 66%, 92%);
+    width:100%;
+    height:100vh;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.contenitore > div{
+    margin-bottom: 20px;
+}
+.bilancio{
+    min-width: 430px;
+    width: 30%;
+    display: flex;
+    background-color: hsl(10, 79%, 65%);
+    justify-content:space-between;
+    align-items: center;
+    color:white;
+    border-radius: 10px;
+    padding: 0 20px 0 20px;
+    
+}
+
+.testo p:nth-child(2){
+    
+    font-size: 1.4rem;
+}
+.testo p:nth-child(1){
+    
+    font-size: 13px;
+}
+.grafico{
+    background-color:hsla(43,100%,97%,1);
+    border-radius: 10px;
+    min-width: 430px;
+    width: 30%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.settimana{
+    display: flex;
+    flex-direction: row;
+ 
+    margin:0 10px 0 10px;
+   align-items: baseline;
+   justify-content: center;
+   
+   
+}
+.settimana > section {
+     margin-right: 12px;
+}
+.settimana > section:nth-child(7) {
+    margin-right: 0;
+}
+.statistica{
+    position: absolute;
+    display: none;
+    top:60px;
+    margin-left:-10px;
+    padding: 5px;
+    background-color: hsl(25, 47%, 15%);
+    color: white !important;
+    border-radius: 5px;
+}
+.statistica2{
+    position: absolute;
+    display: none;
+    top:130px;
+    margin-left:-8px;
+    padding: 5px;
+    background-color: hsl(25, 47%, 15%);
+    color: white !important;
+    border-radius: 5px;
+}
+.cazz:hover,.cazz2:hover{
+    opacity: 0.5;
+}
+
+canvas{
+    background-color:hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width:100% !important;
+    
+} 
+
+
+section:nth-child(3) canvas{
+    background-color: hsl(186, 34%, 60%);
+}
+
+
+.grafico p{
+    margin-top: 0;
+    font-size: 15px;
+    color: grey;
+    margin-bottom: 0;
+    
+
+}
+.grafico p:nth-child(1){
+   
+    margin-top: 10px;
+    
+
+}
+hr{width: 90%;background-color:lightgray; }
+
+
+.grafico > h2{
+    margin-bottom: 50px;
+    margin-left:10%;
+    top:0;
+   
+}
+
+.fondo{
+    margin-left:10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.primo p:nth-child(2){
+    font-size:30px;
+    font-weight: bolder;
+    color:black;
+    
+}
+.secondo {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    
+}
+.secondo p:nth-child(1){
+    margin-left: auto;
+    color: black;
+    font-weight: bolder;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+@media screen and (max-width:440px){
+    .bilancio{
+        min-width: 200px;
+        width: 90%;
+        
+    }
+    .grafico{
+        min-width: 200px;
+        width: 90%;
+        height:60%;
+        justify-content: center;
+        
+    }
+    .settimana{
+        margin-top: 50px;
+    }
+    .grafico > h2{
+        
+        top:0;
+        position: absolute;
+       
+    }
+    hr{
+        margin-top: 40px;
+    }
+    .fondo{
+        
+        padding-bottom: 0;
+    }
+}
